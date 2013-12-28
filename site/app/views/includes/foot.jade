@@ -1,4 +1,6 @@
+.invert.footer(data-ng-include="'views/footer.html'")
 //AngularJS
+script(type='text/javascript', src='/lib/jquery/jquery.min.js')
 script(type='text/javascript', src='/lib/angular/angular.js')
 script(type='text/javascript', src='/lib/angular-cookies/angular-cookies.js')
 script(type='text/javascript', src='/lib/angular-resource/angular-resource.js')
@@ -23,7 +25,15 @@ script(type='text/javascript', src='/js/services/articles.js')
 script(type='text/javascript', src='/js/controllers/articles.js')
 script(type='text/javascript', src='/js/controllers/index.js')
 script(type='text/javascript', src='/js/controllers/header.js')
+script(type='text/javascript', src='/js/controllers/footer.js')
 script(type='text/javascript', src='/js/init.js')
+
+script(type='text/javascript', src='/lib/bootstrap/js/collapse.js')
+script(type='text/javascript', src='/lib/headroom.js/dist/headroom.min.js')
+script(type='text/javascript', src='/lib/headroom.js/dist/angular.headroom.min.js')
+script(type='text/javascript', src='/lib/parallax/deploy/jquery.parallax.min.js')
+script(type='text/javascript', src='/js/jquery.parallel.min.js')
+
 
 if (process.env.NODE_ENV == 'development')
     //Livereload script rendered

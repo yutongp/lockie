@@ -1,0 +1,201 @@
+body, html {
+  height: 100%;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideOutUp {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-62px);
+    transform: translateY(-62px);
+  }
+}
+
+@keyframes slideOutUp {
+  0% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-62px);
+    -ms-transform: translateY(-62px);
+    transform: translateY(-62px);
+  }
+}
+
+@-webkit-keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-62px);
+    transform: translateY(-62px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-62px);
+    -ms-transform: translateY(-62px);
+    transform: translateY(-62px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+.slideOutUp {
+  -webkit-animation-name: slideOutUp;
+  animation-name: slideOutUp;
+}
+
+a, a:hover, a:focus {
+  text-decoration:none;
+}
+
+.social {
+  font-size: 20px;
+}
+
+.social > li {
+  overflow: hidden;
+  height: 50px;
+}
+.social > li > a {
+padding: 15px 10px 15px 0px;
+}
+
+a.header-circle-inner, a.reserve-circle-inner {
+  /*width: 190px;*/
+  /*height: 190px;*/
+  /*margin-top: -100px;*/
+  /*border-radius: 500px;*/
+  /*background: #FFB700;*/
+  width: 190px;
+  height: 140px;
+  margin-top: -35px;
+  border-radius: 10px;
+  background: rgba(38, 139, 210, 0.8);
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+a.header-circle-inner:hover, a.reserve-circle-inner:hover,
+a.header-circle-inner:focus, a.reserve-circle-inner:focus {
+  background: rgba(84, 171, 233, 0.8);
+}
+
+.header-circle-inner > span {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150px;
+  position: relative;
+  top: 45px;
+  right: -35px;
+}
+
+.intro {
+  height: 100%;
+}
+
+.title .title1 {
+  color: #eee;
+  color: rgba(0, 0, 0, .1);
+}
+
+.title .title2 {
+  color: #fff;
+}
+
+.title h1 {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 3rem;
+  height: 1.4em;
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+.background-black {
+  background: #1B1F23;
+}
+
+.background-white {
+  background: #FFFFFF;
+}
+
+.page-inner {
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+
+.custom-bg {
+background-image: url('http://designmodo.github.io/startup-demo/framework/samples/sample-04/img/Italy_001.png');
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+.custom-bg > .container {
+  padding: 300px 300px 0 0;
+}
+
+.invert {
+  background-color: #101010;
+}
+
+.invert h2 {
+  color: #ffffff;
+}
+
+.footer ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.footer li {
+  list-style: none outside none;
+  color: #999999;
+  font-weight: 300;
+  font-size: 21px;
+}
+
+.footer .page-inner li a {
+  color: #999999;
+}
+
+.footer .page-inner li a:hover {
+  border-bottom: none;
+  cursor: pointer;
+  color: #ffffff;
+}

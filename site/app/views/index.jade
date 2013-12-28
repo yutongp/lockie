@@ -1,6 +1,78 @@
 extends layouts/default
 
 block content
-  section(data-ng-view)
-  script(type="text/javascript").
-    window.user = !{user};
+    .jumbotron.intro(data-ng-controller="IndexController")
+        .container
+            .title.lead
+                h1.title1
+                    span.char2 L
+                    span.char2 o
+                    span.char2 c
+                    span.char2 k
+                    span.char2 i
+                    span.char2 e
+                h1.title2
+                    span.char2 L
+                    span.char2 o
+                    span.char2 c
+                    span.char2 k
+                    span.char2 i
+                    span.char2 e
+            h1 Hello {{global.brand}}
+            p A ting lock you falling love with
+            p We have created the product that will help designers, developers and companies to create a website for their startups not spending much time on it.
+    div(data-ng-controller="IndexController")
+        section.background-white
+            .container
+                .page-inner
+                    h1 Take a look in our awesome product
+                    .row
+                        .col-md-4 Of course we haven't forgotten about the responsive layout. Create a website with full mobile support
+                        .col-md-4
+                            .screen-wrapper
+                                .screen.ani-processed
+                                    img( src="http://designmodo.github.io/startup-demo/framework/samples/sample-04/img/screen.png")
+                        .col-md-4
+                            h6.lead Responsive Layout
+                            Of course we haven’t forgotten about the responsive layout. Full mobile support.
+                            h6.lead Responsive Layout
+                            Of course we haven’t forgotten about the responsive layout. Full mobile support.
+        section.bg-image-1.custom-bg
+            .container
+                .page-inner
+                    .hero-unit.hero-unit-bordered
+                        h1 Scenic Nature
+        section.invert
+            .container
+                .page-inner
+                    h1(style="visibility: visible; display: block;") The {{global.brand}}
+                    h1(style="visibility: visible; display: block;") The {{global.brand}}
+                    h1(style="visibility: visible; display: block;") The {{global.brand}}
+                    h1(style="visibility: visible; display: block;") The {{global.brand}}
+                    h1(style="visibility: visible; display: block;") The {{global.brand}}
+                    h1(style="visibility: visible; display: block;") The {{global.brand}}
+                    h1(style="visibility: visible; display: block;") The {{global.brand}}
+                    h1(style="visibility: visible; display: block;") The {{global.brand}}
+                    h1(style="visibility: visible; display: block;") The {{global.brand}}
+                    h1(style="visibility: visible; display: block;") The {{global.brand}}
+                    h1(style="visibility: visible; display: block;") The {{global.brand}}
+        section.background-black
+            .container
+                .page-inner
+                    p(style="visibility: visible; display: block;") A tiny lock you falling love with
+        section.background-white
+            .container
+                .page-inner
+                    h1(style="visibility: visible; display: block;") The {{global.brand}}
+                    h1(style="visibility: visible; display: block;") The {{global.brand}}
+                    h1(style="visibility: visible; display: block;") The {{global.brand}}
+                    h1(style="visibility: visible; display: block;") The {{global.brand}}
+                    h1(style="visibility: visible; display: block;") The {{global.brand}}
+                    h1(style="visibility: visible; display: block;") The {{global.brand}}
+                    h1(style="visibility: visible; display: block;") The {{global.brand}}
+                    h1(style="visibility: visible; display: block;") The {{global.brand}}
+                    h1(style="visibility: visible; display: block;") The {{global.brand}}
+                    h1(style="visibility: visible; display: block;") The {{global.brand}}
+                    h1(style="visibility: visible; display: block;") The {{global.brand}}
+    script(type="text/javascript").
+        window.user = !{user};
